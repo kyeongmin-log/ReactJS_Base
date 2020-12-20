@@ -8,6 +8,19 @@ ReactJS로 영화 웹 서비스 만들기(Nomadcoder)
 
 - async, await : axios로 데이터를 가져오는 건 빠르지 않다. 그렇기에 데이터를 가져올 때까지 기다려달라고 요청할 필요가 있다. 이때 사용하는 것이 async, await이다.
 
+```
+getMovies = async () => {
+    const {
+      data: {
+        data: { movies },
+      },
+    } = await axios.get(
+      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
+    );
+    this.setState({ movies, isLoding: false });
+  };
+```
+
 ### url 동작 방식
 
 ![urlAction](./ReadmeImg/url_action_system.PNG)
@@ -20,8 +33,13 @@ ReactJS로 영화 웹 서비스 만들기(Nomadcoder)
 <Route path="/" exact={true} component={Home} />
 ```
 
+### componentDidmount()
+
+- class component내에서 render가 실행되기 전에 (mount되기전에) 실행된다.
+
 # Movie App 2020
 
 React JS Fundamentals Course
 
 - 결과 : [[Movie App]](https://kyeongmin-log.github.io/reactjs_base/)
+- [수료증](https://nomadcoders.co/certs/fe3961a0-a3b6-4f49-889a-3d1bcfe0a270)
