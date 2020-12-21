@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
 import "./App.css";
+import "./Reset.css";
 
 function App() {
   return (
