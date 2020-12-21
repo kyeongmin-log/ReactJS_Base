@@ -37,6 +37,12 @@ getMovies = async () => {
 
 - class component내에서 render가 실행되기 전에 (mount되기전에) 실행된다.
 
+### Responsive Web Design - Media Queries
+
+![media](./ReadmeImg/Responsive_Web_Design_Media_Queries.PNG)
+
+- media querie를 이용하여 해당 크기에 맞게 css를 조절해준다.
+
 # Movie App 2020
 
 React JS Fundamentals Course
